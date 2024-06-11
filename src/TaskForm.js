@@ -14,7 +14,7 @@ function TaskForm({ addTask }) {
 
   return (
     <form onSubmit={handleSubmit} className="mb-4">
-      <div className="input-group">
+      <div className="input-group mb-3">
         <input
           type="text"
           value={task}

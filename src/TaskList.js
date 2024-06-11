@@ -9,7 +9,7 @@ function TaskList({ tasks, deleteTask }) {
           <span>{task}</span>
           <button
             onClick={() => deleteTask(index)}
-            className="btn btn-danger"
+            className="btn btn-danger btn-sm"
           >
             Eliminar
           </button>

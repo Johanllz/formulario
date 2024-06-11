@@ -18,9 +18,15 @@ function App() {
 
   return (
     <div className="container mt-5">
-      <h1 className="text-center mb-4">Formulario</h1>
-      <TaskForm addTask={addTask} />
-      <TaskList tasks={tasks} deleteTask={deleteTask} />
+      <h1 className="text-center mb-4">Lista de Tareas</h1>
+      <div className="row">
+        <div className="col-md-4">
+          <TaskForm addTask={addTask} />
+        </div>
+        <div className="col-md-8">
+          <TaskList tasks={tasks} deleteTask={deleteTask} />
+        </div>
+      </div>
     </div>
   );
 }
