@@ -20,10 +20,10 @@ function TaskForm({ addTask }) {
           value={task}
           onChange={(e) => setTask(e.target.value)}
           placeholder="Nombre de la tarea"
-          className="form-control"
+          className="form-control rounded-left"
         />
         <div className="input-group-append">
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary rounded-right">
             Agregar tarea
           </button>
         </div>

@@ -21,12 +21,23 @@ function App() {
       <h1 className="text-center mb-4">Lista de Tareas</h1>
       <div className="row">
         <div className="col-md-4">
-          <TaskForm addTask={addTask} />
+          <div className="card shadow-sm">
+            <div className="card-body">
+              <TaskForm addTask={addTask} />
+            </div>
+          </div>
         </div>
         <div className="col-md-8">
-          <TaskList tasks={tasks} deleteTask={deleteTask} />
+          <div className="card shadow-sm">
+            <div className="card-body">
+              <TaskList tasks={tasks} deleteTask={deleteTask} />
+            </div>
+          </div>
         </div>
       </div>
+      <footer className="footer">
+        <p>Instituto Politécnico Nacional, Juan Lopez Lopez©</p>
+      </footer>
     </div>
   );
 }
